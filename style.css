@@ -93,10 +93,38 @@ p:hover {
 
 @keyframes cambiaColor {
     from {
-        background-color: #F51B72;
+        background-color: #EB1D49;
     }
     to {
         background-color: #afaeae;
+    }
+}
+
+.logo {
+    animation: logo 2s linear 0s 2 normal both;
+}
+
+@keyframes logo {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
     }
 }
 
@@ -181,15 +209,15 @@ p:hover {
 .feedback-input:focus {
     background: #fff;
     box-shadow: 0;
-    border: 3px solid #f51b72;
-    color: #f51b72;
+    border: 3px solid #EB1D49;
+    color: #EB1D49;
     outline: none;
     padding: 13px 13px 13px 54px;
 }
 
 .focused {
-    color: #f51b72;
-    border: #f51b72 solid 3px;
+    color: #EB1D49;
+    border: #EB1D49 solid 3px;
 }
 
 textarea {
@@ -212,7 +240,7 @@ textarea:focus {
     width: 100%;
     border: #fbfbfb solid 4px;
     cursor: pointer;
-    background-color: #f51b72;
+    background-color: #EB1D49;
     color: white;
     font-size: 24px;
     padding-top: 22px;
@@ -226,11 +254,11 @@ textarea:focus {
 
 #button-blue:hover {
     background-color: rgba(0, 0, 0, 0);
-    color: #F51B72;
+    color: #EB1D49;
 }
 
 .submit:hover {
-    color: #F51B72;
+    color: #EB1D49;
 }
 
 .ease {
