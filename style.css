@@ -1,0 +1,261 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+html {
+    display: flex;
+    justify-content: center;
+    background-image: url('img/fondo1.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: /*relieve*/
+    0 1px 0 rgb(46, 45, 45), 0 2px 0 rgb(46, 45, 45), 0 3px 0 rgb(46, 45, 45), 0 4px 0 rgb(46, 45, 45), 0 5px 0 rgb(46, 45, 45), 0 6px 0 rgb(46, 45, 45), /*sombra*/
+    5px 7px 5px rgba(0, 0, 0, .40), 5px 12px 10px rgba(0, 0, 0, .30), 5px 17px 20px rgba(0, 0, 0, .20), 5px 22px 30px rgba(0, 0, 0, .10);
+    color: rgb(247, 241, 241);
+    /*transform: rotateY(20deg) rotateX(30deg);*/
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.svg {
+    display: block;
+}
+
+.container {
+    display: block;
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+
+.animacionLogo {
+    animation-duration: 5s;
+    animation-name: animacionLogo;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacionLogo {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+.circuloFlechas {
+    margin: 10px;
+}
+
+#flecha1 {
+    animation: flechas 12s ease-out 0s infinite normal both;
+}
+
+#flecha2 {
+    animation: flechas 10s ease-out 1s infinite normal both;
+}
+
+#flecha3 {
+    animation: flechas 7s ease-out 2s infinite normal both;
+}
+
+#flecha4 {
+    animation: flechas 5s ease-out 3s infinite normal both;
+}
+
+@keyframes flechas {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+p:hover {
+    animation-duration: .5s;
+    animation-name: cambiaColor;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes cambiaColor {
+    from {
+        background-color: #F51B72;
+    }
+    to {
+        background-color: #afaeae;
+    }
+}
+
+
+/*.name {
+    animation: vibra 2s linear 0s 1 normal both;
+}
+
+@keyframes vibra {
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 50%;
+    }
+    10% {
+        transform: rotate(8deg);
+    }
+    20%,
+    40%,
+    60% {
+        transform: rotate(-10deg);
+    }
+    30%,
+    50%,
+    70% {
+        transform: rotate(10deg);
+    }
+    80% {
+        transform: rotate(-8deg);
+    }
+    90% {
+        transform: rotate(8deg);
+    }
+}*/
+
+#feedback-page {
+    text-align: center;
+}
+
+#form-main {
+    width: 100%;
+    float: left;
+    padding-top: 0px;
+}
+
+#form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(72, 72, 72, 0.4);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    width: 450px;
+    float: left;
+    left: 50%;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -260px;
+}
+
+.feedback-input {
+    color: #3c3c3c;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.feedback-input:focus {
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #f51b72;
+    color: #f51b72;
+    outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+.focused {
+    color: #f51b72;
+    border: #f51b72 solid 3px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    background-color: white;
+}
+
+#button-blue {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    float: left;
+    width: 100%;
+    border: #fbfbfb solid 4px;
+    cursor: pointer;
+    background-color: #f51b72;
+    color: white;
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+#button-blue:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #F51B72;
+}
+
+.submit:hover {
+    color: #F51B72;
+}
+
+.ease {
+    width: 0px;
+    height: 74px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease {
+    width: 100%;
+    background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div {
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
