@@ -1,8 +1,7 @@
-let nombre = document.getElementById('name')
-
 let boton = document.getElementById('button-blue')
-
+let nombre = document.getElementById('name')
 let inputName = document.querySelector('inputName')
+let password = document.getElementById('password')
 
 //Eventos
 boton.addEventListener('click', validar)
@@ -12,25 +11,26 @@ contador = 0;
 function validar() {
     validarNombre();
     validarPassword();
-    validarOk();
+    // validarOk();
 }
 
-function validarNombre(e) {
+function validarNombre() {
 
     let errorNombre = document.querySelector('.errorNombre')
-    if (nombre.value == '' || nombre.value.length < 3) {
-        // nombre.classList.add = "name"
-        nombre.setCustomValidity('El nombre debe tener minimo 3 carateres')
+    if (nombre.value == '' || nombre.value.length < 4) {
+        nombre.className = ("vibra")
+        nombre.setCustomValidity('El nombre debe tener minimo 4 carateres')
         nombre.style.background = '#f7c1c4'
-        errorNombre.innerHTML = "El nombre debe tener minimo 3 carateres"
+        errorNombre.innerHTML = "El nombre debe tener minimo 4 carateres"
         errorNombre.style.color = "red"
         errorNombre.style.fontWeight = "bold"
         nombre.focus()
     } else {
         nombre.setCustomValidity('')
-        nombre.style.background = ''
+            // nombre.style.background = ''
+        nombre.classList.add = ("exito")
         errorNombre.innerHTML = ""
-            //nombre.classList.remove = "name"
+        nombre.classList.remove = ("vibra")
         contador++
 
     }
@@ -38,25 +38,21 @@ function validarNombre(e) {
 
 function validarPassword() {
     let errorPassword = document.querySelector('.errorPassword')
-    let password = document.getElementById('password')
-    if (password.value == '' || password.value.length < 3) {
-        password.setCustomValidity('El password debe tener minimo 3 carateres')
+
+    if (password.value == '' || password.value.length < 4) {
+        password.className = ("vibra")
+        password.setCustomValidity('El password debe tener minimo 4 carateres')
         password.style.background = '#f7c1c4'
-        errorPassword.innerHTML = "El password debe tener minimo 3 carateres"
+        errorPassword.innerHTML = "El password debe tener minimo 4 carateres"
         errorPassword.style.color = "red"
         errorPassword.style.fontWeight = "bold"
         password.focus()
     } else {
         password.setCustomValidity('')
-        password.style.background = ''
+            // password.style.background = ''
+        password.classList.add = ("exito")
         errorPassword.innerHTML = ""
+        password.classList.remove = ("vibra")
         contador++
-    }
-}
-
-function validarOk() {
-    if (contador = 2) {
-        exito.innerHTML = "Formulario enviado con exito";
-        exito.style.color = "green"
     }
 }

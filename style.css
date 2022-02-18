@@ -32,7 +32,7 @@ h1 {
 }
 
 .animacionLogo {
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-name: animacionLogo;
     animation-iteration-count: infinite;
 }
@@ -53,33 +53,39 @@ h1 {
 }
 
 .circuloFlechas {
-    margin: 10px;
+    margin: 40px;
 }
 
 #flecha1 {
-    animation: flechas 12s ease-out 0s infinite normal both;
+    animation: flechas 3s ease 0.3s infinite normal both;
 }
 
 #flecha2 {
-    animation: flechas 10s ease-out 1s infinite normal both;
+    animation: flechas 3s ease 0.5s infinite normal both;
 }
 
 #flecha3 {
-    animation: flechas 7s ease-out 2s infinite normal both;
+    animation: flechas 3s ease 0.7s infinite normal both;
 }
 
 #flecha4 {
-    animation: flechas 5s ease-out 3s infinite normal both;
+    animation: flechas 3s ease 0.9s infinite normal both;
 }
 
 @keyframes flechas {
-    0%,
-    50%,
-    100% {
+    0% {
+        opacity: 0;
+    }
+    25% {
         opacity: 1;
     }
-    25%,
+    50% {
+        opacity: 0;
+    }
     75% {
+        opacity: 1;
+    }
+    100% {
         opacity: 0;
     }
 }
@@ -101,7 +107,7 @@ p:hover {
 }
 
 .logo {
-    animation: logo 2s linear 0s 2 normal both;
+    animation: logo 2s linear 1s 2 normal both;
 }
 
 @keyframes logo {
@@ -128,9 +134,41 @@ p:hover {
     }
 }
 
-
-/*.name {
+.vibra {
     animation: vibra 2s linear 0s 1 normal both;
+    color: #3c3c3c;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.exito {
+    border: 3px solid green;
+    color: #3c3c3c;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @keyframes vibra {
@@ -158,7 +196,7 @@ p:hover {
     90% {
         transform: rotate(8deg);
     }
-}*/
+}
 
 #feedback-page {
     text-align: center;
