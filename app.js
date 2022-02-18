@@ -21,7 +21,7 @@ function validarNombre() {
         nombre.className = ("vibra")
         nombre.setCustomValidity('El nombre debe tener minimo 4 carateres')
         nombre.style.background = '#f7c1c4'
-        errorNombre.innerHTML = "El nombre debe tener minimo 4 carateres"
+            //errorNombre.innerHTML = "El nombre debe tener minimo 4 carateres"
         errorNombre.style.color = "red"
         errorNombre.style.fontWeight = "bold"
         nombre.focus()
@@ -43,7 +43,7 @@ function validarPassword() {
         password.className = ("vibra")
         password.setCustomValidity('El password debe tener minimo 4 carateres')
         password.style.background = '#f7c1c4'
-        errorPassword.innerHTML = "El password debe tener minimo 4 carateres"
+            //errorPassword.innerHTML = "El password debe tener minimo 4 carateres"
         errorPassword.style.color = "red"
         errorPassword.style.fontWeight = "bold"
         password.focus()
